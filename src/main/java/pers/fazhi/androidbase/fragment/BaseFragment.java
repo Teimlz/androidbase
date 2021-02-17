@@ -41,7 +41,7 @@ public abstract class BaseFragment<A extends Activity> extends Fragment implemen
     protected abstract void initData();
 
     protected void initFragment(){
-
+        initView();
         initData();
     }
 

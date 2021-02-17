@@ -32,7 +32,7 @@ public abstract class BaseBindViewFragment<A extends Activity,Bind extends ViewB
 
     protected A activity;
 
-    protected Handler handler = new Handler(Looper.getMainLooper(),this);
+    protected Handler handler = new Handler(Looper.myLooper(),this);
 
     protected Dialog waitDialog = null;
 
